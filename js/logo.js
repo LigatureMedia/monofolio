@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         var colour = colours[Math.floor(Math.random() * colours.length)];
         if(char == "M") {
             if(location.href.includes("getStarted") || location.href.includes("contact")) {
-                setIcon("./icons/m_" + colour.split("#")[1] + ".ico");
-            } else {
                 setIcon("../icons/m_" + colour.split("#")[1] + ".ico");
+            } else {
+                setIcon("./icons/m_" + colour.split("#")[1] + ".ico");
             }
         }
         conString += "<span style='color: " + colour + "'>" + char + "</span>"
