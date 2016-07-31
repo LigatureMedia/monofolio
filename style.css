@@ -1,0 +1,79 @@
+* {
+    font-family:"Source Code Pro", monospace, sans-serif;
+}
+html {
+    background-color:#000;
+    color:#FFF;
+}
+body {
+    padding:0;
+}
+a {
+    color:#FFF;
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:underline;
+}
+input, textarea {
+    display:block;
+    padding:0.4em;
+    border:none;
+}
+label {
+    display:block;
+    cursor:pointer;
+    margin-top:0.5em;
+    font-weight:bold;
+}
+.grid {
+    background-color:#000;
+}
+.head {
+    margin:0;
+}
+.subhead, .subhead>* {
+    color:#DDD;
+    margin:0;
+}
+.callToAction {
+    font-size:200%;
+    text-align:center;
+}
+.callToAction>.btn {
+    font-size:100%;
+    text-align:center;
+}
+.big {
+    font-size:200%;
+    display:block;
+}
+.btn {
+    display:inline-block;   
+    padding:0.5em;
+    border:none;
+    cursor:pointer;
+    border-bottom:1px solid #FFF;
+    background-color:rgba(10, 10, 10, 0.5);
+    color:#FFF;
+    border-radius:0;
+    -webkit-border-radius:0;
+    -webkit-appearance:none;
+    margin-top:10px;
+}
+.form-control {
+    width:100%;
+}
+#nav {
+    background-color:#555;
+    margin:0;
+    padding:1em;
+}
+#mainSidebar {
+    background-color:#666;
+    padding:1em;
+}
+#mainContent {
+    background-color:#444;
+    padding:1em;
+}
