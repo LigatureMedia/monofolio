@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) { 
+document.addEventListener("DOMContentLoaded", function(event) {
     //set icon
     var setIcon = function(href) {
         document.querySelector("#favicon").href = href;
@@ -12,7 +12,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     chars.forEach(function(char) {
         var colour = colours[Math.floor(Math.random() * colours.length)];
         if(char == "M") {
-            setIcon("/icons/m_" + colour.split("#")[1] + ".ico");
+            if(location.href.includes("getStarted") || location.href.includes("contact")) {
+                setIcon("./icons/m_" + colour.split("#")[1] + ".ico");
+            } else {
+                setIcon("../icons/m_" + colour.split("#")[1] + ".ico");
+            }
         }
         conString += "<span style='color: " + colour + "'>" + char + "</span>"
     });
